@@ -15,4 +15,14 @@ class PostController extends Controller
         //render view with posts
         return view('posts.index', compact('posts'));
     }
+
+    public function create()
+    {
+        return view('posts.create');
+    }
+
+    public function store(Request $request)
+    {
+
+    }
 }
